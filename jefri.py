@@ -10,11 +10,11 @@ class Led:
                 self.status = False
                 GPIO.setup(pin,GPIO.OUT)
 
-        def ledAn(self):
+        def ledAn(self):#Led An
                 GPIO.output(self.ledPin, GPIO.HIGH)
                 self.status = True
 
-        def ledAus(self):
+        def ledAus(self):#Led Aus
                 GPIO.output(self.ledPin, GPIO.LOW)
                 self.status = False
 
